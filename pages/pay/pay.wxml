@@ -1,0 +1,13 @@
+<!--pages/pay/pay.wxml-->
+<view class="content" wx:if="{{isSuccess}}">
+  <image src='../../images/支付成功80px@3x.svg' class='img'></image>
+  <view class='pay_success'>支付成功</view>
+  <view class='text'>
+    <view>请前往订单详情查看出票进度</view>
+    <view>国内机票预计20分钟，国际机票预计1小时内出票，行程单我们将会发送到您填写的邮箱</view>
+  </view>
+
+  <button class='btn-order' bindtap='toOrder'>查看订单详情</button>
+  <button class='btn-home' bindtap='toHome'>返回首页</button>
+  
+</view>

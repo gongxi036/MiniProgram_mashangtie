@@ -1,0 +1,54 @@
+/* pages/pay/pay.wxss */
+
+.content {
+  text-align: center;
+}
+
+.img {
+  height: 160rpx;
+  width: 160rpx;
+  margin-top: 76rpx;
+  /* display: block; */
+}
+
+.pay_success {
+  font-family: PingFang-SC-Medium;
+  font-size: 36rpx;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 36rpx;
+  margin-top: 36rpx;
+  margin-bottom: 50rpx;
+  font-weight: bold;
+}
+
+.text {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #d8d8d8;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding: 0 48rpx;
+  margin-bottom: 160rpx;
+}
+
+.btn-order {
+  margin: 0 48rpx;
+  font-family: PingFang-SC-Medium;
+  font-size: 34rpx;
+  color: #fff;
+  background: #44db5e;
+  border-radius: 5px;
+  border-color: #44db5e !important;
+}
+
+.btn-home {
+  margin: 20rpx 48rpx;
+  font-family: PingFang-SC-Medium;
+  font-size: 34rpx;
+  color: #555555;
+  background: #fff;
+  border: 0 solid #d8d8d8;
+  border-radius: 5px;
+  border-color: #44db5e !important;
+}
