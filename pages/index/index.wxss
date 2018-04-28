@@ -1,0 +1,18 @@
+/**index.wxss**/
+.content{
+  text-align: center;
+}
+.img1{
+  width: 550rpx;
+  height: 526rpx;
+  margin-top: 140rpx;
+  margin-bottom: 100rpx;
+}
+.img2{
+  width: 200rpx;
+  /* height: 115rpx; */
+}
+.hint{
+  font-size: 28rpx;
+  color: #677F9B;
+}

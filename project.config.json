@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wxe25c689b9c79fe16",
+	"projectname": "%E9%A9%AC%E4%B8%8A%E9%93%81",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "activity",
+					"pathName": "pages/activity/activity",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "zhifu",
+					"pathName": "pages/pay/pay",
+					"query": "orderNo=T439869958202200064&token=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiIyMjkzMSIsImV4cCI6MTUyNzUwNTA1OCwiYWRtaW4iOiIiLCJ1c2VyIjp7InVzZXJJZCI6IjIyOTMxIiwibmV3VXNlcklkIjoyMjkzMSwibmFtZSI6Ijg2MTgqKioqKjk0NzQiLCJpY29uVXJsIjoiaHR0cDovL3AwN3E0Y25mMC5ia3QuY2xvdWRkbi5jb20vaWNfbWluZV9oZWFkLnBuZyIsImNvdW50cnlDb2RlIjoiKzg2IiwibW9iaWxlIjoiMTg1NzU1MDk0NzQiLCJleHBpcmUiOjE1Mjc1MDUwNTgyNTYsInBsYXRmb3JtIjoiaDUiLCJlcXVpcG1lbnRJZCI6bnVsbH19.I8fmG2siFW1RU-wKVw16nrhsdV3PZJf6Uf2hFrQDga7vGAH9Vj4xnv99syCUkQAZ5wmNQCi9jv8aL6cu5Cu-0w"
+				}
+			]
+		}
+	}
+}
