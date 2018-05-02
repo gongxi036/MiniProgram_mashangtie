@@ -1,0 +1,201 @@
+<!--pages/activity/activity.wxml-->
+<!--index.wxml-->
+<!-- <view class="content" style="background-image: url('../../images/banner@3x.png')"> -->
+<view class="content">
+  <view class='title'>
+    <!-- <swiper indicator-dots="{{true}}" autoplay="{{false}}" class='banner'>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper> -->
+    <image src='../../images/LOGO@3x.png' class='logo'></image>
+    <view class='rule' bindtap='toRule' wx:if="{{isReviewed}}">规则</view>
+  </view>
+  <!-- <view> -->
+  <!-- <image style='width:100%;margin-top:-60rpx;margin-bottom:-650rpx' mode="widthFix" src='../../images/banner@2x.png'></image>
+ </view>  -->
+  <view class='block'>
+    <view wx:if="{{isReviewed}}">
+      <view class='count-title'>
+        <span>助力：{{ActivityInfo.upvoteTime}}</span>
+        <span class='right'>节省{{ActivityInfo.discountAmt}}元</span>
+      </view>
+
+      <view class='progress'></view>
+      <view class='rate' style='width:{{rate_width}}'></view>
+    </view>
+
+    <!-- 添加心愿酒店 -->
+    <view wx:if="{{!hasActivity}}">
+      <image src='/images/activity_bg.png' mode="widthFix" class='chatu'></image>
+      <view class='btn-confirm btn-margin'>
+        <image class='' src='/images/btn@3x.png'></image>
+        <form report-submit="true" bindsubmit="goAddWishHotel">
+          <button formType="submit" plain="true" class='btn-addline'>添加路线</button>
+        </form>
+      </view>
+    </view>
+
+    <!-- 心愿酒店信息 -->
+    <view wx:if="{{hasActivity}}">
+      <view class='info'>
+        <span>下一站:</span>
+        <span>{{HotelInfo.city}}</span>
+      </view>
+      <view class='line'></view>
+      <view class='info'>
+        <span>{{HotelInfo.hotelNameCn}}</span>
+      </view>
+      <view class='line'></view>
+      <view class='line'></view>
+      <view class='info'>
+        <span>{{HotelInfo.checkinDate}}</span>
+        至
+        <span>{{HotelInfo.checkoutDate}}</span>
+        <span> {{HotelInfo.nights}}</span>
+        <span>晚1间</span>
+      </view>
+      <view class='line'></view>
+      <view class='line'></view>
+      <view class='info'>
+        <span>{{HotelInfo.roomType}}</span>
+      </view>
+    </view>
+
+  </view>
+
+
+  <!-- 今日活动倒计时 -->
+  <view class='block' wx:if="{{isReviewed}}">
+    <!-- <view class='price'></view> -->
+    <view class='price'>您的心愿价格{{HotelInfo.totalPrice}}元</view>
+    <view class='price'>当前价格 {{ActivityInfo.afterHotelPrice}}元</view>
+    <view class='count-down'>今日活动倒计时</view>
+    <view class='count-group'>
+      <view class='count'>
+        <view class='time-value'>{{countTime.hour}}</view>
+        <image src='../../images/cout_down.png'></image>
+        <view class='time-key'>时</view>
+      </view>
+      <view class='count'>
+        <view class='time-value'>{{countTime.min}}</view>
+        <image src='../../images/cout_down.png'></image>
+        <view class='time-key'>分</view>
+      </view>
+      <view class='count'>
+        <view class='time-value'>{{countTime.sec}}</view>
+        <image src='../../images/cout_down.png'></image>
+        <view class='time-key'>秒</view>
+      </view>
+    </view>
+    <view class='btn-confirm' bindtap='onClickInvite'>
+      <image class='' src='../../images/btn@3x.png'></image>
+      <!-- <view>邀好友助力</view> -->
+      <!-- <button open-type='share' plain="true" class='btn-invite'>邀好友助力</button> -->
+      <button plain="true" class='btn-invite'>邀好友助力</button>
+    </view>
+    <!-- <view wx:if="{{inFive==true}}">
+      <button class='order' bindtap='callOrder'>马上预定</button>
+    </view>
+    <view wx:else>
+      <button class='order' bindtap='showOrderTips'> 马上预定</button>
+    </view> -->
+    <!-- <view class='btn-buy' bindtap='toBuy'>马上买</view> -->
+    <!-- <view class='btn-buy' bindtap='toOrderList' wx:if='{{hasOrder}}'>我的订单</view> -->
+  </view>
+
+  <!--助力排行榜  -->
+  <view class='block' wx:if="{{isReviewed}}">
+    <view class='price'>助力排行榜</view>
+    <view class='hint3'>每日用户助力排行榜的前5名用户可以根据每日活动结束前的最终价格预定酒店</view>
+    <view class='select-list'>
+      <span class="{{now_list}}" data-type="1" bindtap="changeList">当前榜单</span>
+      <span class="{{history_list}}" data-type="2" bindtap="changeList">历史盛况</span>
+    </view>
+    <view class='tabs-name'>
+      <span>名次</span>
+      <span>头像</span>
+      <span>昵称</span>
+      <span>助力值</span>
+    </view>
+    <view class='all-list'>
+      <view class='no-list' wx:if='{{winner_arr.length == 0}}'>当前没有榜单记录</view>
+      <view class='item' wx:for="{{winner_arr}}" wx:key="index">
+        <span class='text'>{{item.index}}</span>
+        <span>
+          <image src="{{item.img}}" class='portrait'></image>
+        </span>
+        <span class='text'>{{item.name}}</span>
+        <span class='text'>{{item.value}}</span>
+      </view>
+    </view>
+
+
+  </view>
+
+  <!-- 好友助力记录 -->
+  <view class='block' wx:if="{{isReviewed}}">
+    <view class='price'>好友助力记录</view>
+
+    <view class='tabs-name'>
+      <span>头像</span>
+      <span>昵称</span>
+      <span class="flex-long">时间</span>
+      <span></span>
+      <span class="help-count">助力金额(元)</span>
+    </view>
+    <view class='all-list'>
+      <view class='no-list' wx:if='{{friends_arr.length == 0}}'>当前没有好友助力记录</view>
+      <view class='item' wx:for="{{friends_arr}}" wx:key="index">
+        <span>
+          <image src="{{item.img}}" class='portrait'></image>
+        </span>
+        <span class='text text_overflow'>{{item.name}}</span>
+        <span class='text flex-long'>{{item.time}}</span>
+        <span class='text'>{{item.value}}</span>
+      </view>
+    </view>
+  </view>
+
+  <!-- 砍价弹窗 -->
+  <view class='dialog' wx:if="{{showDialog}}">
+    <!-- 砍价提示弹窗 -->
+    <view class='alert1' wx:if="{{showHelp}}">
+      <view>为TA点亮心愿值，住的更好就靠你啦</view>
+      <view class='btn-confirm' bindtap='helpFriends'>
+        <image class='' src='../../images/btn@3x.png'></image>
+        <view>确认</view>
+      </view>
+    </view>
+
+    <!-- 砍价结果弹窗 -->
+    <view class='alert2' wx:if="{{showResult}}">
+      <image src="../../images/light@3x.png" class='light'></image>
+      <view class='save'>节省{{help_discountAmt}}元</view>
+      <view class='hint3'>
+        <view>一定是拯救了银河系</view>
+        <view>才有你这么棒的朋友吧</view>
+      </view>
+      <view class='btn-confirm' bindtap='helpDone'>
+        <image class='' src='../../images/btn@3x.png'></image>
+        <view>确定</view>
+      </view>
+    </view>
+
+    <!-- 活动结束弹窗 -->
+    <view class='alert1' wx:if="{{showClosed}}">
+      <view>当前活动已下线</view>
+    </view>
+  </view>
+
+
+  <!-- 邀好友弹框 -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <button open-type='share' plain="true">转发</button>
+    <button plain="true" bindtap='toShare' wx:if="{{ActivityInfo.id}}">朋友圈海报</button>
+    <button plain="true" bindtap='onClickHideModal'>取消</button>
+  </view>
+</view>

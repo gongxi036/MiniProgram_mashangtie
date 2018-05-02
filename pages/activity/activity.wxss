@@ -1,0 +1,680 @@
+/* pages/activity/activity.wxss */
+.content {
+  position: relative;
+  background: #cbd9f0;
+  /* background-image: url('../../images/banner@3x.png'); */
+  height: 100%;
+  /* padding: 0 30rpx; */
+  padding-bottom: 600rpx;
+  /* padding-top:400rpx */
+}
+
+.title {
+  position: relative;
+  height: 60rpx;
+  /* margin-bottom: 300rpx; */
+}
+
+.logo {
+  width: 232rpx;
+  height: 68rpx;
+  margin-left: 30rpx;
+  position: absolute;
+}
+
+.rule {
+  position: absolute;
+  right: 30rpx;
+  top: 10rpx;
+  font-size: 32rpx;
+  color: #157efb;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 11px;
+  margin: 22rpx 30rpx;
+  padding: 38rpx 30rpx;
+}
+
+.count-title {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.right {
+  float: right;
+  font-size: 32rpx !important;
+  align-content: center;
+}
+
+.info {
+  margin: 25rpx 0rpx;
+  font-size: 40rpx !important;
+  color: #333;
+}
+
+.info-right {
+  float: right;
+  /* font-size: 32rpx !important; */
+  align-content: center;
+}
+
+.progress {
+  height: 20rpx;
+  opacity: 0.2;
+  background: #157efb;
+  border-radius: 100px;
+  margin-top: 20rpx;
+}
+
+.rate {
+  background: #157efb;
+  border-radius: 100px;
+  /* width: 200rpx; */
+  height: 20rpx;
+  margin-top: -20rpx;
+  transition: width ease .4s;
+}
+
+.hint1 {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.where {
+  font-size: 32rpx;
+  color: #333;
+  margin-top: 44rpx;
+}
+
+.select-city {
+  font-size: 40rpx;
+  color: #333;
+  margin: 20rpx 0;
+  font-weight: 500;
+}
+
+.line {
+  height: 1rpx;
+  background: #e9e9e9;
+}
+
+.date {
+  margin: 50rpx 0;
+}
+
+.date span:first-child {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.date span:last-child {
+  font-size: 40rpx;
+  color: #333;
+}
+
+.btn-confirm {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-confirm image {
+  height: 122rpx;
+  width: 100%;
+  margin-bottom: -110rpx;
+}
+
+.price {
+  text-align: center;
+  font-size: 44rpx;
+  color: #157efb;
+  font-weight: 500;
+}
+
+.count-down {
+  text-align: center;
+  font-size: 36rpx;
+  color: #666;
+  margin: 28rpx 0;
+  font-weight: 500;
+}
+
+.count-group {
+  text-align: center;
+}
+
+.count {
+  display: inline-block;
+  margin-left: 15rpx;
+  width: 112rpx;
+  height: 148rpx;
+  position: relative;
+}
+
+.count-group image {
+  width: 100%;
+  height: 100%;
+}
+
+.time-value {
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+  color: #a3a3a3;
+}
+
+.time-key {
+  position: absolute;
+  bottom: 20rpx;
+  left: 48rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.btn-buy {
+  text-align: center;
+  /* height: 82rpx; */
+  border: 1px solid #157efb;
+  border-radius: 4px;
+  font-size: 32rpx;
+  color: #157efb;
+  margin-top: 60rpx;
+  padding: 18rpx 0;
+}
+
+.hint3 {
+  font-size: 26rpx;
+  color: #666;
+  margin: 28rpx 0;
+  text-align: center;
+}
+
+.select-list {
+  font-size: 12px;
+  text-align: center;
+}
+
+.select-list span {
+  padding: 4rpx 20rpx;
+  border-radius: 2px;
+  margin-left: 10rpx;
+}
+
+.tabs-name {
+  display: flex;
+  margin: 28rpx 0;
+}
+
+.tabs-name span {
+  flex: 1;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.tabs-name span:last-child {
+  text-align: right;
+}
+
+.item {
+  display: flex;
+  border-top: 2rpx solid #e9e9e9;
+  padding: 17rpx 0;
+}
+
+.item span {
+  flex: 1;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.item span:last-child {
+  text-align: right;
+}
+
+span.text {
+  margin-top: 30rpx;
+}
+
+.portrait {
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+}
+
+.flex-long {
+  flex: 3 !important;
+}
+
+.help-count {
+  position: absolute;
+  right: 60rpx;
+}
+
+.dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dialog .alert1 {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin: 0 42rpx;
+  margin-top: 450rpx;
+  text-align: center;
+  padding: 66rpx 48rpx 80rpx 48rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.alert1 .btn-confirm {
+  margin-top: 80rpx;
+}
+
+.dialog .alert2 {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin: 0 42rpx;
+  margin-top: 280rpx;
+  text-align: center;
+  padding: 66rpx 48rpx 80rpx 48rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.light {
+  width: 276rpx;
+  height: 320rpx;
+}
+
+.save {
+  font-size: 24px;
+  color: #157efb;
+}
+
+.hint3 {
+  font-size: 32rpx;
+  color: #666;
+  margin-top: 74rpx 0;
+}
+
+.btn-invite {
+  border: none !important;
+  color: #fff !important;
+  margin-top: -20rpx;
+}
+
+.fly-way {
+  height: 208rpx;
+}
+
+.btn-margin {
+  margin-top: 50rpx;
+  margin-bottom: 40rpx;
+}
+
+.now-list {
+  background: #157efb;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.history-list {
+  background: #f4f5f5;
+  border-radius: 2px;
+  color: #157efb;
+}
+
+.all-list {
+  max-height: 360rpx;
+  overflow-y: scroll;
+}
+
+.no-list {
+  text-align: center;
+  font-size: 32rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+
+.btn-addline {
+  border: 0px solid #157efb !important;
+  border-radius: 4px !important;
+  font-size: 32rpx !important;
+  color: #fff !important;
+  margin-top: -20rpx;
+  /* margin: 20rpx 42rpx 146rpx 42rpx;   */
+}
+
+.hotel-name {
+  font-size: 45rpx !important;
+  font-family: PingFangSC-Regular;
+}
+
+.activity-detail {
+  font-size: 32rpx !important;
+  float: right;
+}
+
+.fee {
+  font-size: 32rpx !important;
+  float: left;
+}
+
+.fee-no {
+  color: red;
+}
+
+.photo {
+  margin: -38rpx -30rpx 2rpx -30rpx;
+  /* background-image: "../../images/1@3x.png"; *//* max-width:100%;height:auto; *//* background-size: cover; */
+}
+
+.order {
+  color: #157efb;
+  margin-top: 35rpx;
+  border: 1px solid #157efb;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.modal-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.modal-body {
+  position: relative;
+}
+
+.modal-content {
+  /* width: 60%; */
+  margin: 0 10% 0 30%;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+
+.modal-content {
+  width: 60%;
+  height: 150px;
+}
+
+.modal-content .fenxiang {
+  width: 100%;
+  height: 40%;
+}
+
+.favorite {
+  border: none !important;
+  color: #fff !important;
+  margin-top: -20rpx;
+}
+
+.favorite-disabled {
+  border: none !important;
+  color: #fff !important;
+  margin-top: -20rpx;
+}
+
+.btn-search {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  /* width: 80.5%; *//* height: 6.1%; */
+  margin-top: 10rpx;
+  /* margin-left:auto;margin-right:auto;  */
+}
+
+.btn-search image {
+  height: 122rpx;
+  width: 100%;
+  margin-bottom: -110rpx;
+}
+
+.btn-search {
+  border: none !important;
+  color: #fff !important;
+  margin-top: -20rpx;
+}
+
+/*
+ * hotel search box
+ *
+ */
+
+/* .hotelBox {
+  height: 620rpx;
+  padding: 56rpx 48rpx 0 48rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 3px 7px 0 rgba(95, 95, 95, 0.14);
+  background: #fff;
+} */
+
+.searchCity {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ebebeb;
+  border-radius: 10rpx;
+  margin-bottom: 28rpx;
+  margin-top: 28rpx;
+}
+
+.searchDate {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ebebeb;
+  border-radius: 10rpx;
+  line-height: 80rpx;
+  margin-bottom: 28rpx;
+  position: relative;
+  margin-top: 28rpx;
+}
+
+.hotelNameBox {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ebebeb;
+  -webkit-appearance: none;
+  border-radius: 10rpx;
+  position: relative;
+  margin-top: 28rpx;
+  margin-bottom: 28rpx;
+}
+
+.toSearch {
+  width: rem(640);
+  height: rem(100);
+  background-image: linear-gradient(-90deg, #05afaf 0%, #3cd9d9 98%);
+  border-radius: rem(200);
+  text-align: center;
+  font-size: rem(40);
+  line-height: rem(100);
+  color: #fff;
+  letter-spacing: rem(2);
+  margin-top: rem(60);
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-moz-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+.chooseCity {
+  font-weight: 500;
+  width: 450rpx;
+  display: inline-block;
+  font-size: 36rpx;
+  color: #333;
+  padding-left: 20rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.stayCity {
+  display: inline-block;
+  float: right;
+  padding: 10rpx 20rpx;
+  margin-top: 8rpx;
+  border-left: 1px solid #f2f2f2;
+  width: 120rpx;
+  text-align: center;
+}
+
+.hotelName {
+  width: 550rpx;
+  margin-top: 25rpx;
+  /* height: 80rpx;  */
+  line-height: 80rpx;
+  font-size: 36rpx;
+  color: #333;
+  padding-left: 20rpx;
+}
+
+.clearHotel {
+  position: absolute;
+  z-index: 23;
+  width: rem(50);
+  right: 0;
+  margin-top: rem(25);
+}
+
+.stayNight {
+  font-size: 22rpx;
+  line-height: 22rpx !important;
+  color: #666;
+  letter-spacing: -1rpx;
+  text-align: center;
+  vertical-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.stayRight {
+  float: right;
+  padding-right: 20rpx;
+}
+
+.stayCity image {
+  width: 20rpx;
+  height: 20rpx;
+  left: 45rpx;
+  top: 15rpx;
+  text-align: center;
+}
+
+.stayCity p {
+  font-size: 20rpx;
+  color: #05afaf;
+  letter-spacing: 1rpx;
+}
+
+.searchDate span {
+  display: inline-block;
+  font-size: 36rpx;
+  color: #333;
+  padding-left: 20rpx;
+  font-weight: 500;
+}
+
+.searchDate span font {
+  font-size: 22rpx;
+  color: #999;
+  letter-spacing: -1rpx;
+  padding-left: 10rpx;
+}
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+
+.commodity_attr_box button {
+  border: 0px !important;
+  font-size: 26rpx !important;
+  color: #333 !important;
+  padding: 22rpx 0 !important;
+}
+
+.commodity_attr_box button:nth-child(2) {
+  border-top: 1px solid #e9e9e9 !important;
+  border-bottom: 1px solid #e9e9e9 !important;
+  border-radius: 0px !important;
+}
+
+.chatu {
+  width: 100%;
+  margin-bottom: -65rpx;
+  margin-top: 25rpx;
+}
+
+/* 2018-4-9 10:53:05 Author：Exris*/
+
+.text_overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}

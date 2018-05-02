@@ -140,7 +140,7 @@ function getToken(iv, encryptedData, code) {
     'code': code,
     'iv': iv,
     'encryptedData': encryptedData,
-    'from': '5'  // 注册小程来源平台("1" 马上飞 "2": 一键购)
+    'from': '5'  // 注册小程来源平台("5" 马上铁 "6": 马上铁一键购)
   }
   var _this = this;
   console.log(params)
