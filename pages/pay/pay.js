@@ -9,6 +9,7 @@ Page({
   data: {
     options:null,
     isSuccess:false,
+    isPaySuccess: false,
     orderState: 0
   },
 
@@ -28,6 +29,9 @@ Page({
         success:(res)=>{
           console.log('success');
           console.log(res);
+          _this.setData({
+            isSuccess: true
+          })
           setTimeout(function() {
             _this.getOrderState();
           }, 5000);
@@ -38,7 +42,10 @@ Page({
           wx.showToast({
             title: '支付失败',
           })
-          // _this.toOrder();
+          _this.setData({
+            isSuccess: false
+          })
+          _this.toOrder();
         }
       })
   },
@@ -113,9 +120,9 @@ Page({
       success: function(res) {
           console.log(res.data.data);
           if (res.data.data.status == 8 || res.data.data.status == 9 || sres.data.data.status == 10) {
-            _this.setData({ isSuccess: true })
+            _this.setData({ isPaySuccess: true })
           } else {
-            _this.setData({ isSuccess: false })
+            _this.setData({ isPaySuccess: false })
           }
           
       }
