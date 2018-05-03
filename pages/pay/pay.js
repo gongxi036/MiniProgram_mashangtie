@@ -9,7 +9,7 @@ Page({
   data: {
     options:null,
     isSuccess:false,
-    isPaySuccess: false,
+    times: 0,
     orderState: 0
   },
 
@@ -34,7 +34,7 @@ Page({
           })
           setTimeout(function() {
             _this.getOrderState();
-          }, 5000);
+          }, 3000);
         },
         fail:(res)=>{
           console.log('fail');
@@ -43,9 +43,12 @@ Page({
             title: '支付失败',
           })
           _this.setData({
-            isSuccess: false
+            isSuccess: true
           })
-          _this.toOrder();
+          setTimeout(function () {
+            _this.getOrderState(_this.getOrderState);
+          }, 5000);
+          // _this.toOrder();
         }
       })
   },
@@ -111,6 +114,9 @@ Page({
   },
   getOrderState() {
     var _this = this;
+    this.setData({
+      times: ++this.data.times
+    })
     console.log(_this.data.options)
     wx.request({
       url: app.globalData.orderUrl + '/' + _this.data.options.orderNo,
@@ -120,13 +126,17 @@ Page({
       success: function(res) {
           console.log(res.data.data);
           if (res.data.data.status == 8 || res.data.data.status == 9 || sres.data.data.status == 10) {
-            _this.setData({ isPaySuccess: true })
+            _this.setData({ orderState: 1 })
           } else {
-            _this.setData({ isPaySuccess: false })
-          }
-          
+            if (_this.times < 3) {
+              _this.getOrderState();
+            } else {
+              _this.setData({ orderState: 3 })
+            }
+          } 
       }
-    })
+    });
+
   }
 
 })

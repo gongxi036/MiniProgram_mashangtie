@@ -1,6 +1,6 @@
 <!--pages/pay/pay.wxml-->
 <view class="content" wx:if="{{isSuccess}}">
-  <view class="successState" wx:if="{{isPaySuccess}}">
+  <view class="successState" wx:if="{{orderState==1}}">
     <image src='../../images/支付成功80px@3x.png' class='img'></image>
   <view class='pay_success'>支付成功</view>
   <view class='text'>
@@ -9,7 +9,17 @@
   </view>
   </view>
 
-  <view class="successState" wx:if="{{!isPaySuccess}}">
+
+  <view class="failState" wx:if="{{orderState==2}}">
+    <image src='../../images/IC_Fail.png' class='img'></image>
+  <view class='pay_success'>支付失败</view>
+  <view class='text'>
+    <view>你的支付可能遇到问题，请尽快再次支付</view>
+    <!-- <view>国内机票预计20分钟，国际机票预计1小时内出票，行程单我们将会发送到您填写的邮箱</view> -->
+  </view>
+  </view>
+
+  <view class="successState" wx:if="{{orderState==0}}">
     <image src='../../images/loadingS.svg' class='loadimg'></image>
     <view class="failTitle">正在获取支付结果…</view>
   </view>

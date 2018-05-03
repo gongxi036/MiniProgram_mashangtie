@@ -39,16 +39,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "activity",
-					"pathName": "pages/activity/activity",
-					"query": ""
-				},
-				{
 					"id": 2,
 					"name": "zhifu",
 					"pathName": "pages/pay/pay",
-					"query": "orderNo=T439869958202200064&token=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiIyMjkzMSIsImV4cCI6MTUyNzUwNTA1OCwiYWRtaW4iOiIiLCJ1c2VyIjp7InVzZXJJZCI6IjIyOTMxIiwibmV3VXNlcklkIjoyMjkzMSwibmFtZSI6Ijg2MTgqKioqKjk0NzQiLCJpY29uVXJsIjoiaHR0cDovL3AwN3E0Y25mMC5ia3QuY2xvdWRkbi5jb20vaWNfbWluZV9oZWFkLnBuZyIsImNvdW50cnlDb2RlIjoiKzg2IiwibW9iaWxlIjoiMTg1NzU1MDk0NzQiLCJleHBpcmUiOjE1Mjc1MDUwNTgyNTYsInBsYXRmb3JtIjoiaDUiLCJlcXVpcG1lbnRJZCI6bnVsbH19.I8fmG2siFW1RU-wKVw16nrhsdV3PZJf6Uf2hFrQDga7vGAH9Vj4xnv99syCUkQAZ5wmNQCi9jv8aL6cu5Cu-0w"
+					"query": "orderNo=T439869958202200064&token=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiIyMjkzMSIsImV4cCI6MTUyNzg0OTU0MywiYWRtaW4iOiIiLCJ1c2VyIjp7InVzZXJJZCI6IjIyOTMxIiwibmV3VXNlcklkIjoyMjkzMSwibmFtZSI6Ijg2MTgqKioqKjk0NzQiLCJpY29uVXJsIjoiaHR0cDovL3AwN3E0Y25mMC5ia3QuY2xvdWRkbi5jb20vaWNfbWluZV9oZWFkLnBuZyIsImNvdW50cnlDb2RlIjoiKzg2IiwibW9iaWxlIjoiMTg1NzU1MDk0NzQiLCJleHBpcmUiOjE1Mjc4NDk1NDMxNTgsInBsYXRmb3JtIjoiaDUiLCJlcXVpcG1lbnRJZCI6bnVsbH19.acaWeIqquiS5m-4UlnVHnj3j63Xjh-XJBX5mlYkh2Tf1mxDIdP6NUhkh3ToDpinVqdHUfSM8st-ZehbV7S4JvQ"
 				}
 			]
 		}
