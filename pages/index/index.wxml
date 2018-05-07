@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="content">
+<view><image src='../../images/img1.png' class='img1'></image></view>
+<view><image src='../../images/img2.png' class='img2' mode="widthFix"></image></view>
+<view class='hint'>让火车票 更超值</view>
+
+</view>
