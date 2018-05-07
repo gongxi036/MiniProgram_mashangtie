@@ -40,9 +40,9 @@ Page({
         fail:(res)=>{
           console.log('fail');
           console.log(res);
-          wx.showToast({
-            title: '支付失败',
-          })
+          // wx.showToast({
+          //   title: '支付失败',
+          // })
           _this.setData({
             isSuccess: false
           })
