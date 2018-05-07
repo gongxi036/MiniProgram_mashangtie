@@ -18,9 +18,11 @@ Page({
     this.toWebview();
   },
   toWebview() {
+    console.log('../webview/webview?path=' + app.globalData.urlPath)
     wx.navigateTo({
       url: '../webview/webview?path=' + app.globalData.urlPath
     })
+    app.globalData.urlPath = null
   },
   /**
  * 用户点击右上角分享

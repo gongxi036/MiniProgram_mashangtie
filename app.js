@@ -42,6 +42,9 @@ App({
         case 'toActivity':
           this.globalData.urlPath = extraData.value.path;
           break;
+        case 'toLogin':
+          this.globalData.urlPath = extraData.value.path;
+          break;
         case 'buy':
           this.globalData.urlPath = 4;
           break;

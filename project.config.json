@@ -37,12 +37,6 @@
 					"name": "index",
 					"pathName": "pages/index/index",
 					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "zhifu",
-					"pathName": "pages/pay/pay",
-					"query": "orderNo=T442448095511449600&token=eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiIyMjkzMSIsImV4cCI6MTUyODEwNjkxMywiYWRtaW4iOiIiLCJ1c2VyIjp7InVzZXJJZCI6IjIyOTMxIiwibmV3VXNlcklkIjoyMjkzMSwibmFtZSI6Ijg2MTgqKioqKjk0NzQiLCJpY29uVXJsIjoiaHR0cDovL3AwN3E0Y25mMC5ia3QuY2xvdWRkbi5jb20vaWNfbWluZV9oZWFkLnBuZyIsImNvdW50cnlDb2RlIjoiKzg2IiwibW9iaWxlIjoiMTg1NzU1MDk0NzQiLCJleHBpcmUiOjE1MjgxMDY5MTM2MzYsInBsYXRmb3JtIjoiaDUiLCJlcXVpcG1lbnRJZCI6bnVsbH19.Fgb1x4bwKShImtoyV4-SMtrfgMr3jlYhot54ZdOWw-7BcFEGM3scsZmyybeuXssN-CmUlxFXqVRD1Lh_Jp3WDQ"
 				}
 			]
 		}

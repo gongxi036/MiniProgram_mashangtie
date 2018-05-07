@@ -45,6 +45,12 @@ Page({
         case '3':
           _url = 'https://m.matafy.com/one_train_dev/index.html#/activity?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
           break;
+          case '4':
+          _url += '&isMpbuy=1'
+          break
+        case '6':
+          _url = 'https://m.matafy.com/one_train_dev/index.html#/LoginWithPhone?action=login' + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
+          break;
         default:
           break;
       }
@@ -57,7 +63,7 @@ Page({
         data: true,
       })
     }
-    _url = _url + "&temp=" + new Date().getTime();
+    _url = _url + "&temp=" + new Date().getTime() + '&urlPath=' + options.path;
     this.setData({
       url: _url
     })
@@ -76,20 +82,6 @@ Page({
    */
   onShow: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    app.globalData.urlPath = null
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    app.globalData.urlPath = null
   },
 
   /**
@@ -148,6 +140,23 @@ Page({
           envVersion: app.globalData.envVersionFlight
         });
         break;
+      case 'back':
+        app.globalData.token = e.detail.data[0].value.token;
+        wx.setStorage({
+          key: 'phoneToken',
+          data: e.detail.data[0].value.token,
+        })
+        wx.navigateBackMiniProgram({
+          extraData: {
+            token: app.globalData.token,
+            key: 'storageToken'
+          },
+          success: function (res) { },
+          fail: function (res) { },
+          complete: function (res) { },
+        })
+        break;
+
       default:
         break;
     }
