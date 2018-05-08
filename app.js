@@ -75,6 +75,6 @@ App({
     // orderUrl: 'https://testone.matafy.com/train/ticket/order/detail', // 测试环境
     isTest: false,
     weChatCode: null,
-    envVersionFlight: 'trial',//全局控制跳转的环境，方便测试 develop,trial,release
+    envVersionFlight: 'release',//全局控制跳转的环境，方便测试 develop,trial,release
   }
 })
