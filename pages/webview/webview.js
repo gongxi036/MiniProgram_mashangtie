@@ -20,7 +20,7 @@ Page({
     //https://m.matafy.com/wechatMp/index.html#/Choose?token=
     //http://192.168.13.67:8080/#Choose?token=
     // 正式环境
-    var _url = 'https://m.matafy.com/one_train_pro/index.html#/TrainChoose?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
+    var _url = 'https://m.matafy.com/one_train_dev/index.html#/TrainChoose?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
     // var _url = 'http://192.168.1.116:8081/index.html#/TrainChoose?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
     // var _url = 'https://m.matafy.com/train_test/index.html#/Choose?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
 
@@ -36,20 +36,20 @@ Page({
     if (options.path) {
       switch (options.path) {
         case '1':
-          _url = 'https://m.matafy.com/one_train_pro/index.html#/MyOrderDetail?from=paySuccess&orderNo=' + options.orderNo
+          _url = 'https://m.matafy.com/one_train_dev/index.html#/MyOrderDetail?from=paySuccess&orderNo=' + options.orderNo
             + '&token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
           break;
         case '2':
           _url = _url
           break;
         case '3':
-          _url = 'https://m.matafy.com/one_train_pro/index.html#/activity?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
+          _url = 'https://m.matafy.com/one_train_dev/index.html#/activity?token=' + app.globalData.token + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
           break;
           case '4':
           _url += '&isMpbuy=1'
           break
         case '6':
-          _url = 'https://m.matafy.com/one_train_pro/index.html#/LoginWithPhone?action=login' + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
+          _url = 'https://m.matafy.com/one_train_dev/index.html#/LoginWithPhone?action=login' + '&weixinId=' + app.globalData.weixinId + "&mpType=5";
           break;
         default:
           break;
