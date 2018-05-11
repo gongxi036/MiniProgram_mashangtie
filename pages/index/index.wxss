@@ -16,3 +16,59 @@
   font-size: 28rpx;
   color: #677F9B;
 }
+
+.dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dialog .alert1 {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 450rpx;
+  text-align: center;
+  padding: 66rpx 48rpx 80rpx 48rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+.login_model{
+  padding: 0!important;
+  padding-top: 40rpx!important;
+  padding-bottom: 0!important;
+  width: 600rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.login_model .title{
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+  line-height: 1;
+  color: #000;
+}
+
+.login_model .desc{
+  margin-bottom: 40rpx;
+  font-size: 28rpx;
+  color: #9b9b9b;
+}
+
+.login_model .confirm{
+  margin-top: auto;
+  line-height: 95rpx;
+  color: #35c700;
+  /* border-top: .5px solid #efefef; */
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.login_model .confirm::after{
+  border-radius: 0;
+}

@@ -121,7 +121,7 @@ Page({
     })
     console.log('订单里面车看options=='+_this.data.options)
     wx.request({
-      url: app.globalData.orderUrl + '/' + _this.data.options.orderNo,
+      url: app.globalData.orderUrl + '/train/ticket/order/detail/' + _this.data.options.orderNo,
       header: {
         'x-access-token': _this.data.options.token
       },

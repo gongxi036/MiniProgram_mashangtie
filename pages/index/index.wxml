@@ -4,4 +4,13 @@
 <view><image src='../../images/img2.png' class='img2' mode="widthFix"></image></view>
 <view class='hint'>让火车票 更超值</view>
 
+<!-- <view>{{canIUse}}</view>
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+<view class='dialog' wx:if="{{showDialog}}">
+    <view class='alert1 login_model' wx:if="{{!isLogin}}">
+      <view class='title'>提醒</view>
+      <view class='desc'>请先授权小程序哦</view>
+      <button class='confirm' bindgetuserinfo="getUserInfo" open-type="getUserInfo">确定</button>
+    </view>
+  </view>
 </view>
