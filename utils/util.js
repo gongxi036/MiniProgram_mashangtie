@@ -202,7 +202,7 @@ function getEnv() {
   wx.request({
     url: app.globalData.hostname + '/applet/getTrainEnv',
     method: 'POST',
-    data: { version: '1.0' },
+    data: { version: '1.1.0' },
     success: res => {
       console.log('getEnv()');
       console.log('当前环境', res.data)
