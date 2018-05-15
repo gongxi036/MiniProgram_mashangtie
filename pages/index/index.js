@@ -47,7 +47,7 @@ Page({
   },
 
   checkLogin() {
-    if (wx.getStorageSync('isLogin') || app.globalData.isLogin) {
+    if (wx.getStorageSync('LoginData') || app.globalData.isLogin) {
       console.log('已登录');
       this.setData({
         showDialog: false,

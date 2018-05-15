@@ -59,8 +59,8 @@ App({
     }
   },
   globalData: {
-    url_host: 'https://testone.matafy.com',
-    hostname: 'https://testone.matafy.com',
+    url_host: 'https://service.matafy.com',
+    hostname: 'https://service.matafy.com',
     userInfo: null,
     token: null,
     urlPath: null,
@@ -73,10 +73,11 @@ App({
     userId: null,
     activityId: null,//添加的活动Id
     isToActivity: null,//从一键Go跳转进来，进入H5的Activity页面
-    // orderUrl: 'https://service.matafy.com/train/ticket/order/detail', // 正式环境
-    orderUrl: 'https://testone.matafy.com', // 测试环境
+    orderUrl: 'https://service.matafy.com', // 正式环境
+    // orderUrl: 'https://testone.matafy.com', // 测试环境
     isTest: false,
     weChatCode: null,
-    envVersionFlight: 'trial',//全局控制跳转的环境，方便测试 develop,trial,release
+    envVersionFlight: 'release',//全局控制跳转的环境，方便测试 develop,trial,release
+    isLogin: true
   }
 })

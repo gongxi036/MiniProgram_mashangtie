@@ -104,6 +104,7 @@ function getUserInfo() {
       // console.log('getUserInfo失败');
       // console.log(res);
       authSetting();
+      app.globalData.isLogin = false
     },
     complete: () => {
       checkLogin()
