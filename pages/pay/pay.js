@@ -135,7 +135,7 @@ Page({
               setTimeout(() => {
                 console.log('延时继续查');
                 _this.getOrderState();
-              })
+              }, 3000)
               
             } else {
               console.log('查找超时');

@@ -14,7 +14,7 @@
     <image src='../../images/IC_Fail.png' class='img'></image>
   <view class='pay_success'>查询超时</view>
   <view class='text'>
-    <view>支付结果查询超时，请稍后……</view>
+    <view>支付结果查询超时，请稍候……</view>
     <!-- <view>国内机票预计20分钟，国际机票预计1小时内出票，行程单我们将会发送到您填写的邮箱</view> -->
   </view>
   </view>
